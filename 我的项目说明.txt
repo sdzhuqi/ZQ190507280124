@@ -34,3 +34,18 @@ git remote -v
 git remote remove origin
 //修改名字对应的地址
 git remote set-url origin 地址
+
+dir 打开文件夹
+cd  进入文件夹
+Tab 自动补全
+mkdir  创建文件夹
+rm  删除
+
+分支：
+查看分支：git branch
+创建分支：git branch （名字）
+切换分支：git checkout（名字）
+创建+切换：git checkout -b（名字）
+合并某分支到当前分支：git merge（名字）
+删除分支：git branch -d （名字）
+
