@@ -1,0 +1,8 @@
+Git：
+初次使用需要设置用户名和邮箱
+git config --global user.name
+git config --global user.email
+
+clone项目
+用于把一个Github的项目clone到本地变为本地创库
+git clone ssh地址
