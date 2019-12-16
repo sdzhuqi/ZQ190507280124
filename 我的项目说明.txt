@@ -6,3 +6,14 @@ git config --global user.email
 clone项目
 用于把一个Github的项目clone到本地变为本地创库
 git clone ssh地址
+
+添加文件并提交
+
+git status //用于查看文件状态
+git add . //把当前目录下的新增和修改的文件添加到暂存区
+//把暂存区的更新提交到本地库 -am 相当于 -a -m 
+//-a 需要先add 才能commit 有了-a就一步完成
+// -m 添加一个提交信息 引号为提交说明
+git commit -am "add file" 
+//推送本地库的改动到远程仓库
+git push origin master
