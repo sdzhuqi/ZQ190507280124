@@ -8,7 +8,6 @@ clone项目
 git clone ssh地址
 
 添加文件并提交
-
 git status //用于查看文件状态
 git add . //把当前目录下的新增和修改的文件添加到暂存区
 //把暂存区的更新提交到本地库 -am 相当于 -a -m 
@@ -17,3 +16,21 @@ git add . //把当前目录下的新增和修改的文件添加到暂存区
 git commit -am "add file" 
 //推送本地库的改动到远程仓库
 git push origin master
+
+复杂使用
+//本地创建仓库 空项目
+git init
+git add .
+git commit -am "first add"
+//本地仓库推送到远程库 远程库的地址起了个名字叫 origin并保存起来
+git remote add origin 仓库的地址
+git push origin master
+//它会列出每个远程库的简短名字.
+//在克隆完某个项目后,至少可以看到一个名为 origin 的远程库,.
+//Git 默认使用这个名字来标识你所克隆的原始仓库 
+//-v 详细信息
+git remote -v
+//删除名字
+git remote remove origin
+//修改名字对应的地址
+git remote set-url origin 地址
